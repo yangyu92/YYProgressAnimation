@@ -12,8 +12,8 @@
 		F2556D231D813ED2002E6C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2556D211D813ED2002E6C20 /* Main.storyboard */; };
 		F2556D251D813ED2002E6C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2556D241D813ED2002E6C20 /* Assets.xcassets */; };
 		F2556D281D813ED2002E6C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2556D261D813ED2002E6C20 /* LaunchScreen.storyboard */; };
-		F2556D311D814145002E6C20 /* YYGradualProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2556D301D814145002E6C20 /* YYGradualProgressView.swift */; };
 		F2556D331D8148EF002E6C20 /* yyProgressAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = F2556D321D8148EF002E6C20 /* yyProgressAnimation.gif */; };
+		F2556D361D819229002E6C20 /* YYGradualProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2556D351D819229002E6C20 /* YYGradualProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		F2556D241D813ED2002E6C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2556D271D813ED2002E6C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2556D291D813ED2002E6C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2556D301D814145002E6C20 /* YYGradualProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGradualProgressView.swift; sourceTree = "<group>"; };
 		F2556D321D8148EF002E6C20 /* yyProgressAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = yyProgressAnimation.gif; sourceTree = "<group>"; };
+		F2556D351D819229002E6C20 /* YYGradualProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGradualProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		F2556D1C1D813ED2002E6C20 /* YYProgressAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F2556D2F1D814145002E6C20 /* YYProgressAnimation */,
+				F2556D341D819229002E6C20 /* YYProgressAnimation */,
 				F2556D1D1D813ED2002E6C20 /* AppDelegate.swift */,
 				F2556D1F1D813ED2002E6C20 /* ViewController.swift */,
 				F2556D211D813ED2002E6C20 /* Main.storyboard */,
@@ -70,12 +70,13 @@
 			path = YYProgressAnimationDemo;
 			sourceTree = "<group>";
 		};
-		F2556D2F1D814145002E6C20 /* YYProgressAnimation */ = {
+		F2556D341D819229002E6C20 /* YYProgressAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				F2556D301D814145002E6C20 /* YYGradualProgressView.swift */,
+				F2556D351D819229002E6C20 /* YYGradualProgressView.swift */,
 			);
-			path = YYProgressAnimation;
+			name = YYProgressAnimation;
+			path = ../YYProgressAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2556D201D813ED2002E6C20 /* ViewController.swift in Sources */,
-				F2556D311D814145002E6C20 /* YYGradualProgressView.swift in Sources */,
+				F2556D361D819229002E6C20 /* YYGradualProgressView.swift in Sources */,
 				F2556D1E1D813ED2002E6C20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +303,7 @@
 				F2556D2E1D813ED2002E6C20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

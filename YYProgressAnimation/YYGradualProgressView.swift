@@ -74,7 +74,7 @@ class YYGradualProgressView: UIView {
     func setMaskRect(progress: CGFloat) -> CGRect {
         
         var maskRect = self.maskLayuer?.frame
-        maskRect!.size.width = (self.width * progress)*2 + 200
+        maskRect!.size.width = (self.frame.size.width * progress)*2 + 200
         return maskRect!
     }
     
