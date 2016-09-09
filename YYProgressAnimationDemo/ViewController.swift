@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var loadProgressAnimationView: YYGradualProgressView?
+    private var loadProgress: YYGradualProgressView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func SearchProgressAction(sender: AnyObject) {
-        loadProgressAnimationView!.startLoadProgressAnimation()
+        loadProgress!.startLoadProgressAnimation()
     }
     
     @IBAction func RefreshProgressAction(sender: AnyObject) {
-        loadProgressAnimationView!.stopLoadProgressAnimation()
+        loadProgress!.stopLoadProgressAnimation()
     }
     
     override func didReceiveMemoryWarning() {
@@ -31,16 +31,16 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        loadProgressAnimationView = YYGradualProgressView(frame: CGRect(x:0, y: self.navigationController!.navigationBar.frame.height, width: UIScreen.mainScreen().bounds.size.width, height: 3))
-        loadProgressAnimationView?.startLoadProgressAnimation()
+        loadProgress = YYGradualProgressView(frame: CGRect(x:0, y: self.navigationController!.navigationBar.frame.height, width: UIScreen.mainScreen().bounds.size.width, height: 3))
+        loadProgress?.startLoadProgressAnimation()
         
-        self.navigationController!.navigationBar.addSubview(loadProgressAnimationView!)
+        self.navigationController!.navigationBar.addSubview(loadProgress!)
         
         super.viewWillAppear(animated)
     }
     
     override func viewWillDisappear(animated: Bool) {
-        loadProgressAnimationView!.removeFromSuperview()
+        loadProgress!.removeFromSuperview()
         super.viewWillDisappear(animated)
     }
 

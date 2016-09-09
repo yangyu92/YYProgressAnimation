@@ -116,7 +116,7 @@ class YYGradualProgressView: UIView {
         let animation2 = CABasicAnimation(keyPath: "bounds")
         animation2.toValue = NSValue(CGRect: setMaskRect(0.9))
 //        animation2.byValue = NSValue(CGRect: self.bounds)
-        animation2.beginTime = CACurrentMediaTime() + animation.duration + animation.beginTime + 2.8
+        animation2.beginTime = CACurrentMediaTime() + animation.duration + animation.beginTime + 3.8
         animation2.duration = 2.0
         animation2.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
         animation2.repeatCount = 1
