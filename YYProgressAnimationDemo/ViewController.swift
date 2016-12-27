@@ -10,18 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var loadProgress: YYGradualProgressView?
+    fileprivate var loadProgress: YYGradualProgressView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "颜色亮色渐变进度条"
     }
     
-    @IBAction func SearchProgressAction(sender: AnyObject) {
+    @IBAction func SearchProgressAction(_ sender: AnyObject) {
         loadProgress!.startLoadProgressAnimation()
     }
     
-    @IBAction func RefreshProgressAction(sender: AnyObject) {
+    @IBAction func RefreshProgressAction(_ sender: AnyObject) {
         loadProgress!.stopLoadProgressAnimation()
     }
     
@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
-        loadProgress = YYGradualProgressView(frame: CGRect(x:0, y: self.navigationController!.navigationBar.frame.height, width: UIScreen.mainScreen().bounds.size.width, height: 3))
+    override func viewWillAppear(_ animated: Bool) {
+        loadProgress = YYGradualProgressView(frame: CGRect(x:0, y: self.navigationController!.navigationBar.frame.height, width: UIScreen.main.bounds.size.width, height: 3))
         loadProgress?.startLoadProgressAnimation()
         
         self.navigationController!.navigationBar.addSubview(loadProgress!)
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         loadProgress!.removeFromSuperview()
         super.viewWillDisappear(animated)
     }
