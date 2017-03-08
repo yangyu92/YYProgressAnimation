@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "YYProgressAnimation"
-  s.version      = "0.0.2"
+  s.version      = "0.1.0"
   s.summary      = "Gradient effect The progress bar animation"
   s.homepage     = "http://github.com/yangyu92/YYProgressAnimation"
   s.license      = { :type => "MIT", :file => "LICENSE" }
