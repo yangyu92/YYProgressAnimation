@@ -18,11 +18,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func SearchProgressAction(_ sender: AnyObject) {
-        loadProgress!.startLoadProgressAnimation()
+        loadProgress!.start()
     }
     
     @IBAction func RefreshProgressAction(_ sender: AnyObject) {
-        loadProgress!.stopLoadProgressAnimation()
+        loadProgress!.stop()
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         loadProgress = YYGradualProgressView(frame: CGRect(x:0, y: self.navigationController!.navigationBar.frame.height, width: UIScreen.main.bounds.size.width, height: 3))
-        loadProgress?.startLoadProgressAnimation()
+        loadProgress?.start()
         
         self.navigationController!.navigationBar.addSubview(loadProgress!)
         

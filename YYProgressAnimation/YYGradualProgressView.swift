@@ -94,7 +94,7 @@ class YYGradualProgressView: UIView,CAAnimationDelegate{
         fatalError("init(coder:) has not been implemented")
     }
     
-    func startLoadProgressAnimation() {
+    func start() {
         maskLayuer!.isHidden = false
         maskLayuer!.removeAllAnimations()
         
@@ -174,12 +174,10 @@ class YYGradualProgressView: UIView,CAAnimationDelegate{
                 maskLayuer?.removeAnimation(forKey: "opacity1")
                 print("动画3完成(错误结束)")
             }
-            
         }
-        
     }
     
-    func stopLoadProgressAnimation() {
+    func stop() {
         
         maskLayuer?.removeAnimation(forKey: "colors")
         
